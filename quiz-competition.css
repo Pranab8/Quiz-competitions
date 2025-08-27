@@ -1,86 +1,143 @@
+/* Question Block - Light Mode */
 .question-block {
-       font-family: 'Baloo Da 2', Arial, sans-serif;
-       font-size: medium;
-       background: #fff;
-       border: 1px solid #ccc;
-       border-radius: 10px;
-       padding: 15px;
-       margin-bottom: 20px;
-       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-       display: none;
-        }
-       .question-block {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 20px;
-      background: #f9f9f9;
-    }
-    .options span {
-      display: block;
-      margin: 5px 0;
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background: #fff;
-      transition: 0.3s;
-    }
-    .options span:hover {
-      background: #f0f8ff;
-    }
-    .option-correct {
-      background-color: #d4edda !important;
-      border-color: #28a745;
-    }
-    .option-wrong {
-      background-color: #f8d7da !important;
-      border-color: #dc3545;
-    }
-
-button.acc {
-  margin-top: 10px;
-}
-.pnl {
+  font-family: 'Baloo Da 2', Arial, sans-serif;
+  font-size: medium;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   display: none;
 }
 
+/* Question Block - Alternate Light Mode Style */
+.question-block {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
 
-     .acc {
-      margin-top: 10px;
-      background: #007bff;
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+/* Options - Light Mode */
+.options span {
+  display: block;
+  margin: 5px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.3s;
+}
+.options span:hover {
+  background: #f0f8ff;
+}
 
-     
+/* Correct/Wrong Answer - Light Mode */
+.option-correct {
+  background-color: #d4edda !important;
+  border-color: #28a745;
+}
+.option-wrong {
+  background-color: #f8d7da !important;
+  border-color: #dc3545;
+}
 
-     .pnl {
-      display: none;
-      margin-top: 10px;
-      background: #fff3cd;
-      padding: 8px;
-      border-left: 4px solid #ffc107;
-    }
+/* Accordion Button */
+button.acc, .acc {
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-     .pagination {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .pagination button {
-      margin: 0 5px;
-      padding: 6px 12px;
-      cursor: pointer;
-      border: none;
-      background: #ddd;
-      border-radius: 5px;
-    }
-    .pagination button.active {
-      background: #007bff;
-      color: white;
-    }
+/* Panel */
+.pnl {
+  display: none;
+  margin-top: 10px;
+  background: #fff3cd;
+  padding: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+}
+.pagination button.active {
+  background: #007bff;
+  color: white;
+}
+
+/* ----------------------- */
+/* Dark Mode Styles Start  */
+/* ----------------------- */
+
+body.dark .question-block,
+body.is-dark .question-block {
+  background: #1e1e1e;
+  border: 1px solid #555;
+  color: #f1f1f1;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+}
+
+body.dark .options span,
+body.is-dark .options span {
+  background: #2a2a2a;
+  border: 1px solid #555;
+  color: #f1f1f1;
+}
+body.dark .options span:hover,
+body.is-dark .options span:hover {
+  background: #3a3a3a;
+}
+
+body.dark .option-correct,
+body.is-dark .option-correct {
+  background-color: #1e4620 !important;
+  border-color: #28a745;
+  color: #a8e6a1;
+}
+
+body.dark .option-wrong,
+body.is-dark .option-wrong {
+  background-color: #4a1f1f !important;
+  border-color: #dc3545;
+  color: #ffb3b3;
+}
+
+body.dark .pnl,
+body.is-dark .pnl {
+  background: #3a3a3a;
+  border-left: 4px solid #ffc107;
+  color: #fff8e1;
+}
+
+body.dark .pagination button,
+body.is-dark .pagination button {
+  background: #3a3a3a;
+  color: #f1f1f1;
+}
+body.dark .pagination button.active,
+body.is-dark .pagination button.active {
+  background: #007bff;
+  color: #fff;
+}
+    
+    
     /* SCORE-BOARD STYLES */
 #score-board {
   display: flex;
